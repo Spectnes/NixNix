@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>NixPs</title>
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #232526 0%, #414345 100%);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+    header, footer { text-align: center; }
+    header { padding: 2rem 0 1rem; }
+    h1 { font-size: 3rem; letter-spacing: 2px; }
+    main { flex: 1; display: flex; flex-direction: column; align-items: center; }
+    section { max-width: 500px; margin-bottom: 2rem; text-align: center; }
+    .links { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;}
+    .btn-link {
+      background: #25D366;
+      color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      box-shadow: 0 2px 8px rgba(34,139,34,0.2);
+      transition: background 0.2s;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+    .btn-link.discord {
+      background: #5865F2;
+      box-shadow: 0 2px 8px rgba(88,101,242,0.2);
+    }
+    .btn-link:hover { filter: brightness(1.1); }
+    footer { margin: 2rem 0 1rem; color: #aaa; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NixPs</h1>
+    <p style="color: #bbb; font-size: 1.2rem;">Komunitas kreatif, berbagi inspirasi dan teknologi.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Tentang NixPs</h2>
+      <p>NixPs adalah komunitas untuk berbagi pengetahuan, diskusi, dan kolaborasi seputar teknologi dan kreativitas.<br>
+      Gabung bersama kami di platform berikut:</p>
+    </section>
+    <div class="links">
+      <a class="btn-link" href="https://chat.whatsapp.com/Gu52O2ThipG4uWzuJlym93?mode=ac_t" target="_blank" rel="noopener noreferrer">WhatsApp Group</a>
+      <a class="btn-link discord" href="https://discord.gg/JMth4dqx" target="_blank" rel="noopener noreferrer">Discord Server</a>
+    </div>
+  </main>
+  <footer>
+    &copy; <span id="year"></span> NixPs. All rights reserved.
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
